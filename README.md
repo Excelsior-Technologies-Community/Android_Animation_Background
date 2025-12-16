@@ -3,7 +3,7 @@
 [![Kotlin](https://img.shields.io/badge/Kotlin-1.9-blue?logo=kotlin&logoColor=white)](https://kotlinlang.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![API](https://img.shields.io/badge/API-21%2B-orange.svg)](#)
-[![](https://jitpack.io/v/Excelsior-Technologies-Community/RichMediaNotificationsKit.svg)](https://jitpack.io/#Excelsior-Technologies-Community/RichMediaNotificationsKit)
+[![](https://jitpack.io/v/Excelsior-Technologies-Community/AnimationBackgroundKit.svg)](https://jitpack.io/#Excelsior-Technologies-Community/AnimationBackgroundKit)
 
 **Animation Background Library** is a production-ready Android library that provides stunning, fully customizable animated backgrounds with zero boilerplate. Create professional animated UI elements through simple XML attributes - no custom code required!
 
@@ -12,7 +12,7 @@
 ## 📸 Preview
 
 <img src="app/src/main/assets/Video.gif"
-       alt="Rich Media Notification Library Demo" 
+       alt="Animation Background Library Demo" 
       height="320"/>
 
 ---

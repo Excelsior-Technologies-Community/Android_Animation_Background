@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ============================================ -->
+    <!-- GRADIENT ANIMATION BACKGROUND ATTRIBUTES -->
+    <!-- ============================================ -->
+    <declare-styleable name="GradientAnimationView">
+        <!-- Start color of the gradient -->
+        <attr name="ab_gradientStartColor" format="color" />
+
+        <!-- End color of the gradient -->
+        <attr name="ab_gradientEndColor" format="color" />
+
+        <!-- Optional middle color for 3-color gradients -->
+        <attr name="ab_gradientMiddleColor" format="color" />
+
+        <!-- Animation duration in milliseconds (default: 3000) -->
+        <attr name="ab_gradientDuration" format="integer" />
+
+        <!-- Gradient direction: horizontal, vertical, diagonal_tl_br, diagonal_tr_bl -->
+        <attr name="ab_gradientDirection" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+            <enum name="diagonal_tl_br" value="2" />
+            <enum name="diagonal_tr_bl" value="3" />
+        </attr>
+
+        <!-- Enable auto-start animation (default: true) -->
+        <attr name="ab_gradientAutoStart" format="boolean" />
+
+        <!-- Enable reverse animation (default: true) -->
+        <attr name="ab_gradientReverse" format="boolean" />
+    </declare-styleable>
+
+    <!-- ============================================ -->
+    <!-- PARTICLE ANIMATION BACKGROUND ATTRIBUTES -->
+    <!-- ============================================ -->
+    <declare-styleable name="ParticleAnimationView">
+        <!-- Number of particles (default: 50) -->
+        <attr name="ab_particleCount" format="integer" />
+
+        <!-- Minimum particle size in dp (default: 2) -->
+        <attr name="ab_particleMinSize" format="dimension" />
+
+        <!-- Maximum particle size in dp (default: 6) -->
+        <attr name="ab_particleMaxSize" format="dimension" />
+
+        <!-- Particle color (default: white) -->
+        <attr name="ab_particleColor" format="color" />
+
+        <!-- Particle speed multiplier (default: 1.0) -->
+        <attr name="ab_particleSpeed" format="float" />
+
+        <!-- Movement direction: random, up, down, left, right -->
+        <attr name="ab_particleDirection" format="enum">
+            <enum name="random" value="0" />
+            <enum name="up" value="1" />
+            <enum name="down" value="2" />
+            <enum name="left" value="3" />
+            <enum name="right" value="4" />
+        </attr>
+
+        <!-- Enable connection lines between nearby particles -->
+        <attr name="ab_particleConnectLines" format="boolean" />
+
+        <!-- Maximum distance for particle connections in dp (default: 100) -->
+        <attr name="ab_particleConnectionDistance" format="dimension" />
+
+        <!-- Particle opacity (0.0 - 1.0, default: 0.8) -->
+        <attr name="ab_particleAlpha" format="float" />
+
+        <!-- Enable auto-start animation (default: true) -->
+        <attr name="ab_particleAutoStart" format="boolean" />
+    </declare-styleable>
+
+    <!-- ============================================ -->
+    <!-- WAVE ANIMATION BACKGROUND ATTRIBUTES -->
+    <!-- ============================================ -->
+    <declare-styleable name="WaveAnimationView">
+        <!-- Primary wave color (default: blue) -->
+        <attr name="ab_wavePrimaryColor" format="color" />
+
+        <!-- Secondary wave color (default: light blue) -->
+        <attr name="ab_waveSecondaryColor" format="color" />
+
+        <!-- Number of waves to display (default: 3) -->
+        <attr name="ab_waveCount" format="integer" />
+
+        <!-- Wave amplitude in dp (height of wave, default: 40) -->
+        <attr name="ab_waveAmplitude" format="dimension" />
+
+        <!-- Wave frequency (number of complete waves visible, default: 2.0) -->
+        <attr name="ab_waveFrequency" format="float" />
+
+        <!-- Wave speed multiplier (default: 1.0) -->
+        <attr name="ab_waveSpeed" format="float" />
+
+        <!-- Wave opacity (0.0 - 1.0, default: 0.5) -->
+        <attr name="ab_waveAlpha" format="float" />
+
+        <!-- Wave direction: left_to_right, right_to_left -->
+        <attr name="ab_waveDirection" format="enum">
+            <enum name="left_to_right" value="0" />
+            <enum name="right_to_left" value="1" />
+        </attr>
+
+        <!-- Enable auto-start animation (default: true) -->
+        <attr name="ab_waveAutoStart" format="boolean" />
+    </declare-styleable>
+
+    <!-- ============================================ -->
+    <!-- SHAPE MORPHING BACKGROUND ATTRIBUTES -->
+    <!-- ============================================ -->
+    <declare-styleable name="ShapeMorphingAnimationView">
+        <!-- Primary shape color (default: purple) -->
+        <attr name="ab_shapePrimaryColor" format="color" />
+
+        <!-- Secondary shape color (default: pink) -->
+        <attr name="ab_shapeSecondaryColor" format="color" />
+
+        <!-- Number of shapes (default: 3) -->
+        <attr name="ab_shapeCount" format="integer" />
+
+        <!-- Minimum shape size in dp (default: 50) -->
+        <attr name="ab_shapeMinSize" format="dimension" />
+
+        <!-- Maximum shape size in dp (default: 150) -->
+        <attr name="ab_shapeMaxSize" format="dimension" />
+
+        <!-- Morph duration in milliseconds (default: 4000) -->
+        <attr name="ab_shapeMorphDuration" format="integer" />
+
+        <!-- Enable shape rotation (default: true) -->
+        <attr name="ab_shapeEnableRotation" format="boolean" />
+
+        <!-- Rotation speed multiplier (default: 1.0) -->
+        <attr name="ab_shapeRotationSpeed" format="float" />
+
+        <!-- Shape opacity (0.0 - 1.0, default: 0.6) -->
+        <attr name="ab_shapeAlpha" format="float" />
+
+        <!-- Shape blur radius in dp (default: 30) -->
+        <attr name="ab_shapeBlurRadius" format="dimension" />
+
+        <!-- Enable auto-start animation (default: true) -->
+        <attr name="ab_shapeAutoStart" format="boolean" />
+    </declare-styleable>
+
+    <!-- ============================================ -->
+    <!-- BUTTON ANIMATION BACKGROUND ATTRIBUTES -->
+    <!-- ============================================ -->
+    <declare-styleable name="ButtonAnimationView">
+        <!-- Border color (default: white) -->
+        <attr name="ab_buttonBorderColor" format="color" />
+
+        <!-- Border width in dp (default: 2) -->
+        <attr name="ab_buttonBorderWidth" format="dimension" />
+
+        <!-- Dash length in dp (default: 10) -->
+        <attr name="ab_buttonDashLength" format="dimension" />
+
+        <!-- Dash gap in dp (default: 5) -->
+        <attr name="ab_buttonDashGap" format="dimension" />
+
+        <!-- Animation speed multiplier (default: 1.0) -->
+        <attr name="ab_buttonAnimationSpeed" format="float" />
+
+        <!-- Corner radius in dp (default: 12) -->
+        <attr name="ab_buttonCornerRadius" format="dimension" />
+
+        <!-- Animation direction: clockwise, counter_clockwise -->
+        <attr name="ab_buttonDirection" format="enum">
+            <enum name="clockwise" value="0" />
+            <enum name="counter_clockwise" value="1" />
+        </attr>
+
+        <!-- Enable auto-start animation (default: true) -->
+        <attr name="ab_buttonAutoStart" format="boolean" />
+    </declare-styleable>
+
+</resources>

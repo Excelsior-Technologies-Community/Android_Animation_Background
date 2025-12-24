@@ -385,26 +385,6 @@ fun setAnimationSpeed(speed: Float) // Update animation speed
 
 ---
 
-## 🏗️ Architecture
-
-The library uses a clean architecture pattern:
-
-```
-animation_background/
-├── base/
-│   └── BaseAnimationView.kt          # Base class handling lifecycle
-├── views/
-│   ├── GradientAnimationView.kt      # Gradient implementation
-│   ├── ParticleAnimationView.kt      # Particle implementation
-│   ├── WaveAnimationView.kt          # Wave implementation
-│   ├── ShapeMorphingAnimationView.kt # Shape morphing implementation
-│   └── ButtonAnimationView.kt        # Button animation implementation
-└── utils/
-    └── AnimationConstants.kt         # Shared constants and enums
-```
-
----
-
 ## 📄 License
 
 ```
